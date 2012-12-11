@@ -314,7 +314,8 @@ function encode(value, buffer, offset) {
   
   // undefined
   if (type === "undefined") {
-    buffer[offset] = 0xc4;
+    //buffer[offset] = 0xc4;
+    buffer[offset] = 0xc0;
     return 1;
   }
   
